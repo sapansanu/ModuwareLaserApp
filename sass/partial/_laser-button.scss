@@ -1,0 +1,18 @@
+.laser_button {
+  @include position(absolute, 50% null null 50%);
+  @include transform(translateX(-50%) translateY(-50%));
+  width: 35.55vw; height: 35.55vw;
+  background-size: 75px;
+  background-repeat: no-repeat;
+  border: 1.5vw solid $white;
+  border-radius: 50%;
+  background-image: url(../img/laser_icon.svg);
+  background-position: 50% 50%;
+
+&.active{
+    background-color: $red;
+    border: none;
+    background-size: 75px;
+
+  }
+}

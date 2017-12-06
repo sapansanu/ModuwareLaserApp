@@ -1,0 +1,15 @@
+.cover_indicator {
+  @include position(absolute, 25% null null 50%);
+  @include transform(translateX(-50%) translateY(-50%));
+  width: 20px; height: 20px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: 50% 50%;
+  background-size: 50px;
+  background-image: url(../img/indicator.svg);
+
+  &.active {
+    background-image: none;
+    background-color: $red;
+  }
+}

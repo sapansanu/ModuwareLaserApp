@@ -1,0 +1,44 @@
+.instructions_panel {
+  color: white;
+  font-weight: 300;
+  font-size: 0.85em;
+  line-height: 1.3em;
+
+  img {
+    @include position(absolute, 50% null null 50%);
+    @include transform(translateX(-50%) translateY(-50%));
+    height: 75vh;
+  }
+
+  .label-open {
+    @include position(absolute, 33% null null 14%);
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  .label-detailed {
+    @include position(absolute, 53% null null 48%);
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+ 
+  .button-close-instruction {
+  @include position(absolute,87% null null 50%);
+  @include transform(translateX(-50%) translateY(-50%));
+  width: 90%;
+  height:8.75%;
+  background: white;
+  border-radius: 4px;
+  font-size: 20px;
+  color: black;
+  letter-spacing: 0.64px;
+  }
+
+  .button-doNotShow {
+    @include position(absolute,94% null null 5%);
+    width: 90%;
+    height: 20px;
+    background: black;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+  }
+}

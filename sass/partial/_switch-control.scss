@@ -1,0 +1,43 @@
+.onoffswitch {
+  @include position(absolute, 75% null null 50%);
+  @include transform(translateX(-50%) translateY(-50%));
+  width: 44px;
+  -webkit-user-select:none; 
+  -moz-user-select:none;
+  -ms-user-select: none;
+
+  .checkbox {
+    display: none;
+    
+    &:checked + .switch-label{
+      background-color: rgba(74,74,74,0.8);
+      border-radius:3px;
+    }
+    &:checked + .switch-label:before {
+      background-image: url(../img/lock_active.svg);
+    }
+  }
+
+  & .switch-label {
+    display: block; 
+    position: relative;
+    overflow: hidden; 
+    width:44px;
+    height:44px; 
+    
+
+    &::before {
+      content:"";
+      display: block; 
+      position: relative;
+      top:50%;
+      left:50%;
+      @include transform(translateX(-50%) translateY(-50%));
+      width:24px;
+      height:24px; 
+      background-image: url(../img/lock.svg);
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+    }
+  }
+}

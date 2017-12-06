@@ -1,0 +1,10 @@
+.wrapper {
+  background-color: black;
+}
+.laser_top {
+  @include position(absolute, 63px null null 0);
+}
+.control_panel {
+  width: 100%;
+  height: 100%;
+}

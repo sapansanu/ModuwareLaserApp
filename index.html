@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- vendor -->
+
+    <!-- nexpaq libs -->
+    <script type="text/javascript" src="js/NexpaqHeader.js"></script>
+    <!-- <script type="text/javascript" src="js/lib/nexpaqAPI.js"></script>
+    <script type="text/javascript" src="js/lib/nexpaq.laser.js"></script> -->
+    <!-- partials -->
+
+    <!-- screens -->
+
+    <!-- tools-->
+    <script type="text/javascript" src="js/Cookie.js"></script>
+
+    <!-- core -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div id="wrapper" class="wrapper">
+      <div class="control_panel hidden" id="control_panel">
+        <button class="laser_button" id="laser_button"></button>
+        <div class="cover_indicator" id="cover_indicator"></div>
+        <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="checkbox" id="myonoffswitch" checked>
+        <label class="switch-label" for="myonoffswitch"></label>
+      </div>
+      </div>
+      <div class="instructions_panel unselectable" id="instructions_panel">
+        <img src="img/instruction.png">
+        <span class="label-open" data-label-id="instruction-open">OPEN</span>
+        <span class="label-detailed" data-label-id="instruction-detailed">
+          Please open the module<br>
+          before using
+        </span>
+        <button type="button" class="button-close-instruction" id="button-close-instruction">Got It</button>
+        <button type="button" class="button-doNotShow" id="button-doNotShow">Don't show again</button>
+      </div>
+    </div>
+  </body>
+</html>
